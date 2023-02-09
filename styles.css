@@ -14,7 +14,7 @@ body{
 	line-height: 1.7;
 	color: #ececee;
 	background-color: #1f2029;
-	overflow: hidden;
+	/* overflow: hidden; */
   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
   background-position: center;
   background-repeat: repeat;
@@ -323,5 +323,9 @@ h1{
   @include media-breakpoint-only(xl) {
     column-count: 5;
   }
+}
+
+.container {
+  overflow-y: auto;
 }
 
