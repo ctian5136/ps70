@@ -329,3 +329,8 @@ h1{
   overflow-y: auto;
 }
 
+pre {
+  overflow: scroll;
+  height: 500px;
+  background-color: #f5f5f5;
+}
