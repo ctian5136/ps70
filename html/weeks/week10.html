@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Week 10</title>
+        <link rel="stylesheet" href="../../styles.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body> 
+        <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
+          <label for="menu-icon"></label>
+          <nav class="nav"> 		
+              <ul class="pt-5">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../ps70.html">PS70</a></li>
+                <li><a href="../about.html">About</a></li>
+              </ul>
+          </nav>
+        
+        <div class="container" style="margin: 40px">
+            <h1>Week 10: IoT</h1>
+            <br>
+            <br>
+            <p> Are your friends cosntantly looking over your shoulder at your computer? Are you in need of a 
+                defense mechanism? Well, you're in luck!
+            </p>
+            
+            <h3>Facial Recognition Rubber Band Shooter</h3>
+            <p>
+                <br>
+                This week, Bobby, Lane, and I worked together to create a facial recognition rubber band shooter that takes
+                in the input from a computer camera, writes to a database, and then shoots a rubber band with a servo motor controlled mechanism after reading 
+                a value from the database.
+                <br>                <br>
+            </p>   
+            <h4>Materials:</h4>
+            <p>
+                <ul>
+                    <li>
+                        2 ESP32 S2 Microcontrollers
+                    </li>
+                    <li>
+                        Computer with camera
+                    </li>
+                    <li>
+                        Firebase Database
+                    </li>
+                    <li>
+                        1 Servo Motor mounted in wood
+                    </li>
+                    <li>
+                        1 Rubber Band
+                    </li>
+                    <li>
+                        Wires
+                    </li>
+                </ul>
+            </p>
+
+            <h4>Assembly</h4>
+            <h5>Rubber Band Shooting Mechanism</h5>
+            <p> Lane assembled the rubber band mechanism. To create one that can be controlled by a microcontroller, he attached
+                a servo motor with a spoked attachment to a piece of wood that would then stretch the rubber band out. The servo
+                was also connected to an ESP32 that would control it. See images below for details on how the mechanism was created.
+            </p>
+            <div class="container" style="text-align: center; ">
+                <img src="../../images/week5/toilet_paper_roll2.jpg" style="width:500px;" alt="roll_two_parts"></img>
+            </div>
+            <br>
+            <h5>Camera Facial Recognition Mechanism</h5>
+            <p> To create our input, which was a facial recognition system, Bobby first started out with the ESP CAM, but then switched to using the camera built into his computer, along with a python script.
+                
+            </p>
+            <div class="container" style="text-align: center; ">
+                <img src="../../images/week5/toilet_paper_roll2.jpg" style="width:500px;" alt="roll_two_parts"></img>
+            </div>
+            <br>
+            <h5>Firebase and ESP communication</h5>
+            <p> I worked on the communication of the two ESP32's through a Firebase Realtime Database. The ESP32 connected to the facial recognition system
+                would write to the database a boolean value (either true or false) when it detected a face. The ESP32 connected to the servo motor would then read from the database
+                and if the value was true, it would shoot the rubber band. Below is the code for writing and reading to the database.
+            </p>
+            <br>
+            <h5>All together now!</h5>
+            <p> When all connected, here's what the system does: INSERT VIDEO</p>
+
+        </div>
+    </body> 
+
+</html>
