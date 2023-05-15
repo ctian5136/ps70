@@ -22,6 +22,8 @@
         <div class="container" style="margin: 40px">
             <h1>Week 6: Input Devices</h1>
             <br>
+            <p>Need to restrict access to your table? fear not. use an rfid sensor!</p>
+            <br>
             <h3>Swipe Identifier</h3>
             <p>This week, I wanted to work with RFID sensors–they just seemed cool, and I keep thinking about the Flipper Zero, which is an adorable RFID cloner.
                 The materials I used to make the swipe identifier were:
@@ -34,8 +36,15 @@
                     <li>Arduino IDE</li>
                 </ul>
                 <br>
+                <div class="container" style="text-align:center ;">
+                  <img src="../../images/week6/IMG_2082 Small.png" style="width:400px; text-align: center;" alt="false"></img>
+                </div>
+                <br>
+                <br>
 
-                
+              To work with the rfid sensors, after wiring up the sensor with the correct pin out, you can use your microcontroller and the IDE
+              to write/read the data from the chip. 
+              To write to the chip, use the code below. To read, you can select what data you want to access and then display.
 
             </p>
 
@@ -182,7 +191,14 @@
                    
                 </code>
               </pre>
+              <p>After hooking up the OLED display, you can now display the names of people at your table who have access.</p>
         </div>
+        <div class="container" style="text-align:center">
+          <video width="700"  controls>
+              <source src="../../images/week6/IMG_2083.mp4" type="video/mp4">
+          </video>
+      </div>
+
     </body> 
 
 </html>
